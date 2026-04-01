@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Wendel Emerald</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+    }
+
+    /* 🎥 Vidéo fond */
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* 🌑 Overlay sombre */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    /* 📦 Contenu centré */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* 🖼️ Photo profil */
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #22c55e;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px #22c55e;
+    }
+
+    /* ✨ Titre glow */
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e;
+    }
+
+    p {
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    /* 🔘 Boutons */
+    a {
+      display: block;
+      margin: 12px auto;
+      padding: 15px;
+      width: 260px;
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #22c55e;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      backdrop-filter: blur(5px);
+      transition: 0.3s;
+    }
+
+    a:hover {
+      transform: scale(1.08);
+      background: #22c55e;
+      color: black;
+      box-shadow: 0 0 20px #22c55e;
+    }
+
+    /* ✨ Animation fade */
+    .content {
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translate(-50%, -60%);}
+      to {opacity: 1; transform: translate(-50%, -50%);}
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- 🎥 Vidéo -->
+  <video autoplay muted loop>
+    <source src="https://motionbgs.com/media/9377/natsu-dragneel-lucy-heartfilia-fairy-tail.960x540.mp4" type="video/mp4">
+  </video>
+
+  <!-- 🌑 Overlay -->
+  <div class="overlay"></div>
+
+  <!-- 🔥 Contenu -->
+  <div class="content">
+
+    <!-- 🖼️ Mets ton image ici -->
+    <img src="https://via.placeholder.com/120" class="profile">
+
+    <h1>🔥 Wendel Emerald</h1>
+    <p>Streamer & Creator</p>
+
+    <a href="https://www.twitch.tv/wendel_emrald" target="_blank">🎮 Twitch</a>
+    <a href="https://www.tiktok.com/@wendel_emerald" target="_blank">🎵 TikTok</a>
+    <a href="https://www.youtube.com/@Wendel_Emerald" target="_blank">▶️ YouTube</a>
+
+  </div>
+
+</body>
+</html>
